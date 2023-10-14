@@ -3,7 +3,7 @@ package com.example.contactsapp.usesCases
 import com.example.contactsapp.domain.model.Contact
 
 //these are the events the user will invoke during use
-sealed class ContactEvent() {
+sealed class ContactEvent {
     data object SaveContact: ContactEvent()
     //putting data in the fields by the user
     data class SetFirstName(val firstName: String): ContactEvent()

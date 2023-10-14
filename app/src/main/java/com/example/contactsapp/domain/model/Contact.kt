@@ -9,5 +9,5 @@ data class Contact(
     val lastName: String,
     val phoneNumber: String,
     @PrimaryKey(autoGenerate = true)
-    val id: Int,
+    val id: Int = 0,
 )
